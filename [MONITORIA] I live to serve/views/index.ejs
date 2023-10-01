@@ -10,9 +10,7 @@
     body {
         background-color: gray;
     }
-    h1{
-        text-align: center;
-    }
+    
     #formulario{
         position: absolute;
         background-color: orangered;
@@ -23,48 +21,42 @@
         width: 50%;
         height: 90%;
     }
-    #formulario #nome{
+    #formulario h1{
+        text-align: center;
         position: absolute;
         top: 20%;
         left: 50%;
+        width: 100%;
         transform: translate(-50%);
-        font-size: 200%;
     }
-    #formulario #sobrenome{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%);
-        font-size: 200%;
-    }
-    input{
+    #moeda{
         background-color: black;
         color: orangered;
         text-align: center;
-        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
         height: 20px;
-        
     }
     #enviar{
+        background-color: black;
+        color: orangered;
+        font-size: 150%;
         position: absolute;
         top: 60%;
         left: 50%;
-        transform: translate(-50%);
-        width: 10%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        height: 50px;
     }
 </style>
 
 <body>
-        <form id="formulario" action="/formulario" method="get">
-            <h1>Formulário</h1>
-            <div id="nome">
-                <label>Escreva seu nome:</label><br>
-                <input type="text" name="nome">
-            </div>
-            <div id="sobrenome">
-                <label>Escreva seu sobrenome:</label><br>
-                <input type="text" name="sobrenome">
-            </div>
+        <form id="formulario" action="/conversao" method="get">
+            <h1>Conversor de Reais para Dólares canadenses</h1>
+            <input type="number" name="moeda" id="moeda" placeholder="Valor em reais">
             <input id="enviar" type="submit">
         </form>
 </body>
