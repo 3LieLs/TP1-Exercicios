@@ -1,40 +1,24 @@
 const port = 8020;
 
-//Express
 const express = require("express");
 const app = express();
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 app.set('view engine', 'ejs');
 
-app.get("/", (request, response) => {
-    response.render("index"); // views/index.ejs
+app.get("/", (req, res) => {
+res.render("index");
 });
 
-app.get("/formulario", (request, response) => {
-    response.render(`Nome: ${request.query.nome}<br> Sobrenome: ${request.query.sobrenome}<br> Cidade: ${request.query.cidade}`);
-    /*
-    response.send(
-        `<div style="
-        position: absolute;
-        background-color: orangered;
-        border: solid 8px black;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-        height: 90%;
-        text-align: center;
-        font-size: 200%;">
-    <p>Nome: ${request.query.nome}</p>
-    <p>Sobrenome: ${request.query.sobrenome}</p>
-    <p>Cidade: ${request.query.cidade}</p>
-</div>`
-    );*/
+app.post('/formulario', (req, res) => {
+    const data = {
+        nome: req.body.name,
+        sobrenome: req.body.sobrenome,
+        cidade: req.body.cidade
+    }
+    res.render('cadastro', { data });
 });
-
-app.use((request, response, next) => {
-    response.status(404).send("<h1>Página não encontrada.</h1>");
-})
 
 app.listen(port, () => {
-    console.log(`Servidor funcionando na porta: ${port}`);
+console.log(`Servidor funcionando na porta: ${port}`);
 });
