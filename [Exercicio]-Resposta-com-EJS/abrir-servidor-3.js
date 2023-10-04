@@ -10,6 +10,8 @@ app.get("/", (request, response) => {
 });
 
 app.get("/formulario", (request, response) => {
+    response.render(`Nome: ${request.query.nome}<br> Sobrenome: ${request.query.sobrenome}<br> Cidade: ${request.query.cidade}`);
+    /*
     response.send(
         `<div style="
         position: absolute;
@@ -24,8 +26,9 @@ app.get("/formulario", (request, response) => {
         font-size: 200%;">
     <p>Nome: ${request.query.nome}</p>
     <p>Sobrenome: ${request.query.sobrenome}</p>
+    <p>Cidade: ${request.query.cidade}</p>
 </div>`
-    );
+    );*/
 });
 
 app.use((request, response, next) => {
