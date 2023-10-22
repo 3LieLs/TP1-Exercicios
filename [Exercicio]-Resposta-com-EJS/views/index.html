@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+
+<style>
+    body {
+        background-color: gray;
+    }
+
+    #formulario {
+        position: absolute;
+        background-color: orangered;
+        border: solid 8px black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 90%;
+    }
+
+    #nome {
+        background-color: black;
+        color: orangered;
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 20px;
+    }
+
+    #sobrenome {
+        background-color: black;
+        color: orangered;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 20px;
+    }
+
+    #cidade {
+        background-color: black;
+        color: orangered;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 20px;
+    }
+    #enviar{
+        background-color: black;
+        color: orangered;
+        font-size: 150%;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        height: 50px;
+    }
+</style>
+
+<body>
+    <form id="formulario" action="/formulario" method="get">
+        <input id="nome" type="text" name="nome" placeholder="Nome">
+        <input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome">
+        <input id="cidade" type="text" name="cidade" placeholder="Cidade">
+        <input id="enviar" type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
