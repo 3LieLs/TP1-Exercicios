@@ -5,6 +5,12 @@ var cont = 0
 const express = require("express");
 const app = express();
 app.set('view engine', 'ejs');
+app.use(express.static('public'))
+
+//const cors = require('cors')
+//app.use(cors())
+
+
 
 app.get("/", (request, response) => {
     response.render("index"); // views/index.ejs
