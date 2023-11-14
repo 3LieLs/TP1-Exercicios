@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="/[Exercício]-Um-servidor-acessado-via-localhost/public/style.css">
+    <link rel="stylesheet" href="/[Exercício]-Um-servidor-acessado-via-localhost/public/formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+
+<body>
+    <div id="cabeca">
+        <h1>League of legends</h1>
+    </div>
+    
+
+    <div class="conteudo">
+        <div id="colunaCentro">
+            <form id="formulario">
+                <label for="Cadastro"> SE CADASTRE NO JOGO</label>
+                <br>
+                <br>
+                <label for="fnome">Nome:</label><br>
+                <input type="text" id="fnome" name="fnome"><br>
+
+                <label for="femail">Email:</label><br>
+                <input type="email" id="femail" name="femail"><br>
+
+                <label for="lsenha">Senha:</label><br>
+                <input type="password" id="lsenha" name="lsenha">
+                <br>
+                <a href="/">Cadastrar</a>
+                <br>
+                <footer class="home"><%- include('home') %></footer>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

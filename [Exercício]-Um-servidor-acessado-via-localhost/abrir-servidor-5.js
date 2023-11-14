@@ -16,12 +16,16 @@ app.get("/", (request, response) => {
     response.render("index"); // views/index.ejs
 });
 
-app.get("/objetivos", (request, response) => {
-    response.render("objetivos");
+app.get("/cadastro", (request, response) => {
+    response.render("cadastro");
 });
 
-app.get("/tec", (request, response) => {
-    response.render("tec");
+app.get("/personagens", (request, response) => {
+    response.render("personagens");
+});
+
+app.get("/sobre", (request, response) => {
+    response.render("sobre");
 });
 
 app.use((request, response, next) => {
