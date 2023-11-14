@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+    }
+    
+    #formulario{
+        position: absolute;
+        background-color: orangered;
+        border: solid 8px black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 90%;
+    }
+    #formulario h1{
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%);
+    }
+    #num1{
+        background-color: black;
+        color: orangered;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 20px;
+    }
+    #num2{
+        background-color: black;
+        color: orangered;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 20px;
+    }
+    #operacao{
+        background-color: black;
+        color: orangered;
+        text-align: center;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 20px;
+    }
+    #calculo{
+        background-color: black;
+        color: orangered;
+        font-size: 150%;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50px;
+    }
+</style>
+
+<body>
+        <form id="formulario" action="/conta" method="get">
+            <h1>Calculadora</h1>
+            <input type="number" name="num1" id="num1" placeholder="Primeiro valor" required>
+            <input type="number" name="num2" id="num2" placeholder="Segundo valor" required>
+            <input type="text" name="operacao" id="operacao" placeholder="Tipo de operação (+ - * /)" required>
+            <input id="calculo" type="submit" value="Calcular">
+        </form>
+</body>
+
+</html>
