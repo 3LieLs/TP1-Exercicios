@@ -1,0 +1,21 @@
+#formulario {
+    background-image: linear-gradient(180deg, #2d8cc3 75%, #ffffff);
+    border: solid black 4px;
+    width: 30%;
+    margin: auto;
+    height: 400px;
+    padding-top: 3%;
+    text-decoration: none;
+}
+
+#formulario label {
+    margin: 0% 0% 0% 0%;
+}
+
+#formulario input {
+    width: 75%;
+    margin: 1% 0% 10% 0%;
+}
+.home{
+    font-size: 20pt;
+}
