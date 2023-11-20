@@ -11,19 +11,13 @@ body {
 
 #cabecalho img {
     position: relative;
-    top: 10%;
+    top: 15%;
     left: 2%;
-}
-
-#cabecalho h1:first-child {
-    position: relative;
-    top: -25%;
-    left: 8%;
 }
 
 #cabecalho h1 {
     position: relative;
-    top: -25%;
+    top: -15%;
     left: 8%;
 }
 
@@ -80,6 +74,7 @@ body {
 #rodape p {
     position: relative;
     top: 5%;
+    margin: 0%;
 
     color: #FFF;
     text-align: center;
@@ -93,7 +88,7 @@ body {
 
 #rodape h3 {
     position: relative;
-    left: 1%;
+    left: 3%;
 
     color: #000;
     text-align: left;
@@ -106,6 +101,6 @@ body {
 
 #rodape img {
     position: relative;
-    left: 3%;
+    left: 5%;
     margin: 0% 1% 0% 0%;
 }

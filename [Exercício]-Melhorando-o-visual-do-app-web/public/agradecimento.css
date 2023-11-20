@@ -27,7 +27,7 @@ body {
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    top: 27%;
+    top: 26%;
     width: 50%;
     height: 70px;
     flex-shrink: 0;
