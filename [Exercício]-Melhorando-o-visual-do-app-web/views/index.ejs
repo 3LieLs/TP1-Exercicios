@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doação de orgãos</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="formulario.css">
 </head>
 
 <body>
@@ -14,11 +15,37 @@
         <h1>Hospital Municipal<br><span style="visibility: hidden;">.....</span>Mariana Maria de Jesus</h1>
         <button class="beneficios"><a href="/motivacao">Benefícios</a></button>
         <button class="sobre"><a href="/sobre">Sobre</a></button>
-        <button class="cadastre-se"><a href="/formulario">Cadastre-se</a></button>
+        <button id="formularioBotao" class="cadastre-se">Cadastre-se</a></button>
     </header>
 
     <main id="conteudo">
-
+        <div id="mainFormulario">
+            <form id="formulario" action="/agradecimento" action="POST">
+                <button id="abrirFechar" type="button">X</button>
+                <label id="nome" for="nome">Nome Completo:<input id="nomeLabel" type="text"></label>
+    
+    
+                <label id="data" for="data">Data de Nascimento:</label>
+                <input id="dataLabel" type="date">
+    
+                <label id="email" for="email">Email:</label>
+                <input id="emailLabel" type="email">
+    
+                <label id="telefone" for="telefone">Telefone:</label>
+                <input id="telefoneLabel" type="number">
+    
+                <label id="cep" for="cep">CEP:</label>
+                <input id="cepLabel" type="number">
+    
+                <label id="endereco" for="endereco">Endereço:</label>
+                <input id="enderecoLabel" type="text">
+    
+                <label id="tipoSanguineo" for="tipoSanguineo">Tipo sanguineo:</label>
+                <input id="tipoSanguineoLabel" type="text">
+    
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>  
     </main>
 
     <footer id="rodape">
@@ -29,6 +56,9 @@
         <img src="img/facebook.svg" alt="">
         <img src="img/youtube.svg" alt="">
     </footer>
+
+    <script src="formulario.js"></script>
+
 </body>
 
 </html>

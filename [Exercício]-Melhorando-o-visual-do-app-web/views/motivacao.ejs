@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benefícios</title>
     <link rel="stylesheet" href="motivacao.css">
+    <link rel="stylesheet" href="formulario.css">
 </head>
 
 <body>
@@ -43,11 +44,41 @@
             <img src="img/setembro-verde-laco_21384_img 1.png"
                 alt="">
         </section>
+
+        <div id="mainFormulario">
+            <form id="formulario" action="/agradecimento" action="POST">
+                <button id="abrirFechar" type="button">X</button>
+                <label id="nome" for="nome">Nome Completo:<input id="nomeLabel" type="text"></label>
+    
+    
+                <label id="data" for="data">Data de Nascimento:</label>
+                <input id="dataLabel" type="date">
+    
+                <label id="email" for="email">Email:</label>
+                <input id="emailLabel" type="email">
+    
+                <label id="telefone" for="telefone">Telefone:</label>
+                <input id="telefoneLabel" type="number">
+    
+                <label id="cep" for="cep">CEP:</label>
+                <input id="cepLabel" type="number">
+    
+                <label id="endereco" for="endereco">Endereço:</label>
+                <input id="enderecoLabel" type="text">
+    
+                <label id="tipoSanguineo" for="tipoSanguineo">Tipo sanguineo:</label>
+                <input id="tipoSanguineoLabel" type="text">
+    
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>  
     </main>
 
     <footer id="rodape">
-        <button class="serdoador"><a href="/formulario">Quero ser um doador</a></button>
+        <button id="formularioBotao" class="serdoador">Quero ser um doador</a></button>
     </footer>
+
+    <script src="formulario.js"></script>
 </body>
 
 </html>
