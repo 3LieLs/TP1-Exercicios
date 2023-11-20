@@ -1,21 +1,43 @@
 #formulario {
-    background-image: linear-gradient(180deg, #2d8cc3 75%, #ffffff);
-    border: solid black 4px;
-    width: 30%;
-    margin: auto;
-    height: 400px;
-    padding-top: 3%;
-    text-decoration: none;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 3%;
+    top: 5%;
+    width: 40%;
+    height: 500px;
+
+    background-image: linear-gradient(180deg, #00700B 80.73%, #000501 100%);
+    border: solid black 3px;
+    border-radius: 5%;
 }
 
-#formulario label {
-    margin: 0% 0% 0% 0%;
+#formulario #abrirFechar {
+    position: relative;
+    top: -3%;
+    left: 98%;
 }
 
-#formulario input {
-    width: 75%;
-    margin: 1% 0% 10% 0%;
+#nome {
+    position: relative;
+    top: 5%;
+    right: 3%;
 }
-.home{
-    font-size: 20pt;
+
+#nome input {
+    position: relative;
+    top: 4%;
+    right: 17%;
+}
+
+#data {
+    position: relative;
+    top: 20%;
+    right: 0%;
+}
+
+#data input {
+    position: relative;
+    top: 4%;
+    right: 17%;
 }

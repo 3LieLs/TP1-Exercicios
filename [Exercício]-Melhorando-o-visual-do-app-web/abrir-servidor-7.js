@@ -4,9 +4,8 @@ var cont = 0
 //Express
 const express = require("express");
 const app = express();
-const handlebars = require("express-handlebars")
-app.engine('handlebars', handlebars({defaultLayout: 'main'}))
-app.set('view engine', 'handlebars');
+const fs = require("fs");
+app.set('view engine', 'ejs');
 app.use(express.static('public'))
 
 //const cors = require('cors')
@@ -15,20 +14,25 @@ app.use(express.static('public'))
 
 
 app.get("/", (request, response) => {
-    response.render("index"); // views/index.ejs
+    response.render("index");
 });
 
-app.get("/cadastro", (request, response) => {
-    response.render("formulario");
-});
-
-app.get("/personagens", (request, response) => {
-    response.render("personagens");
+app.get("/motivacao", (request, response) => {
+    response.render("motivacao"); 
 });
 
 app.get("/sobre", (request, response) => {
     response.render("sobre");
 });
+
+app.get("/agradecimento", (request, response) => {
+    response.render("agradecimento");
+});
+
+app.get("/formulario", (request, response) => {
+    response.render("formulario");
+});
+
 
 app.use((request, response, next) => {
     response.status(404).send("<h1>Página não encontrada.</h1>");
