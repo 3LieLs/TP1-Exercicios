@@ -71,3 +71,7 @@ body {
     flex-shrink: 0;
     background: linear-gradient(180deg, #2D2D2D 0%, #187D22 36.46%);
 }
+
+@media screen {
+    
+}
