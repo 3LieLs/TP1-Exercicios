@@ -1,6 +1,8 @@
-ElielElieleae eae /n[object Object]/nEliel/nEliel
-Eliel
-Eliel
-undefined
-undefined
-undefined
+
+{}
+{"nome":"Eliel"}
+{"nome":"Eliel"}
+{"nome":"Kauan"}
+{"nome":"Eliel Fernandes"}
+{"nome":"Eliel"}
+{"nome":"Eliel","idade":"2023-11-01","email":"aegfawfaf@gmail.com","telefone":"24141241412451","CEP":"512512414124","endereco":"1wafafawfaf","sangue":"dois"}

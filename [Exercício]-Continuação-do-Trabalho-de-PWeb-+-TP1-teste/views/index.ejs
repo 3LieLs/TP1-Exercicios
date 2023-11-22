@@ -20,29 +20,29 @@
 
     <main id="conteudo">
         <div id="mainFormulario" class="input-group">
-            <form class="container" action="/agradecimento" method="get">
+            <form class="container" action="/agradecimento" method="post">
                 <button id="abrirFechar" type="button">X</button>
 
                 <label class="input-group label" for="nome">Nome Completo:
                 <input id="nomeLabel" name="nomeLabel" type="text"></label>
     
                 <label class="input-group label" for="data">Data de Nascimento:</label>
-                <input class="input-group input" type="date">
+                <input class="input-group input" type="date" name="idadeLabel">
     
                 <label class="input-group label" for="email">Email:</label>
-                <input class="input-group input" type="email">
+                <input class="input-group input" type="email" name="emailLabel">
     
                 <label class="input-group label" for="telefone">Telefone:</label>
-                <input class="input-group input" type="number">
+                <input class="input-group input" type="number" name="telefoneLabel">
     
                 <label class="input-group label" for="cep">CEP:</label>
-                <input class="input-group input" type="number">
+                <input class="input-group input" type="number" name="CEPLabel">
     
                 <label class="input-group label" for="endereco">Endereço:</label>
-                <input class="input-group input" type="text">
+                <input class="input-group input" type="text" name="enderecoLabel">
     
                 <label class="input-group label" for="tipoSanguineo">Tipo sanguineo:</label>
-                <input class="input-group input" type="text">
+                <input class="input-group input" type="text" name="tipoSanguineoLabel">
     
                 <button type="submit">Cadastrar</button>
             </form>

@@ -6,6 +6,7 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const { json } = require("stream/consumers");
+app.use(express.urlencoded({ extended: true }))
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
 
@@ -26,20 +27,36 @@ app.get("/sobre", (request, response) => {
     response.render("sobre");
 });
 
-app.get("/agradecimento", (request, response) => {
+app.post("/agradecimento", (request, response) => {
 
-    let nomeForm = request.query.nomeLabel
+    let nomeForm = request.body.nomeLabel
+    let idadeForm = request.body.idadeLabel
+    let emailForm = request.body.emailLabel
+    let telefoneForm = request.body.telefoneLabel
+    let CEPForm = request.body.CEPLabel
+    let enderecoForm = request.body.enderecoLabel
+    let tipoSanguineoForm = request.body.tipoSanguineoLabel
 
-    let cadastro = {'nome': nomeForm}
+
+    let cadastro = {
+        'nome': nomeForm,
+        'idade': idadeForm,
+        'email': emailForm,
+        'telefone': telefoneForm,
+        'CEP': CEPForm,
+        'endereco': enderecoForm,
+        'sangue': tipoSanguineoForm,
+
+    }
 
     //fs.writeFileSync('nome.txt', nome) //Sobreescreve o nome no arquivo
     fs.appendFileSync('nome.json', `\n${JSON.stringify(cadastro)}`) //Adiciona um nome no arquivo
     //JSON.stringify() Transforma em string
     //JSON.parse() transforma em JSON
-    
 
-    resultado = (`${cadastro}`)
-    response.render("agradecimento", {resultado});
+
+    resultado = (`${nomeForm}`)
+    response.render("agradecimento", { resultado });
 });
 
 app.get("/salvar", (request, response) => {
