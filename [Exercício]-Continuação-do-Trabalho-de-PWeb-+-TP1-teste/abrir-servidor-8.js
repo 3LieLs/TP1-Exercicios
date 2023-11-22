@@ -5,6 +5,7 @@ var cont = 0
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const { json } = require("stream/consumers");
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
 
@@ -18,7 +19,7 @@ app.get("/", (request, response) => {
 });
 
 app.get("/motivacao", (request, response) => {
-    response.render("motivacao"); 
+    response.render("motivacao");
 });
 
 app.get("/sobre", (request, response) => {
@@ -26,10 +27,22 @@ app.get("/sobre", (request, response) => {
 });
 
 app.get("/agradecimento", (request, response) => {
-    response.render("agradecimento");
+
+    let nomeForm = request.query.nomeLabel
+
+    let cadastro = {'nome': nomeForm}
+
+    //fs.writeFileSync('nome.txt', nome) //Sobreescreve o nome no arquivo
+    fs.appendFileSync('nome.json', `\n${JSON.stringify(cadastro)}`) //Adiciona um nome no arquivo
+    //JSON.stringify() Transforma em string
+    //JSON.parse() transforma em JSON
+    
+
+    resultado = (`${cadastro}`)
+    response.render("agradecimento", {resultado});
 });
 
-app.get("/formulario", (request, response) => {
+app.get("/salvar", (request, response) => {
     response.render("formulario");
 });
 

@@ -20,10 +20,11 @@
 
     <main id="conteudo">
         <div id="mainFormulario" class="input-group">
-            <form class="container" action="/agradecimento" action="POST">
+            <form class="container" action="/agradecimento" method="get">
                 <button id="abrirFechar" type="button">X</button>
-                <label class="input-group label" for="nome">Nome Completo:<input id="nomeLabel" type="text"></label>
-    
+
+                <label class="input-group label" for="nome">Nome Completo:
+                <input id="nomeLabel" name="nomeLabel" type="text"></label>
     
                 <label class="input-group label" for="data">Data de Nascimento:</label>
                 <input class="input-group input" type="date">
