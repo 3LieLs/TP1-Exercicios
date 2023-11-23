@@ -5,6 +5,8 @@ var cont = 0
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const { json } = require("stream/consumers");
+app.use(express.urlencoded({ extended: true }))
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
 
@@ -18,18 +20,18 @@ app.get("/", (request, response) => {
 });
 
 app.get("/motivacao", (request, response) => {
-    response.render("motivacao"); 
+    response.render("motivacao");
 });
 
 app.get("/sobre", (request, response) => {
     response.render("sobre");
 });
 
-app.get("/agradecimento", (request, response) => {
+app.post("/agradecimento", (request, response) => {
     response.render("agradecimento");
 });
 
-app.get("/formulario", (request, response) => {
+app.get("/salvar", (request, response) => {
     response.render("formulario");
 });
 

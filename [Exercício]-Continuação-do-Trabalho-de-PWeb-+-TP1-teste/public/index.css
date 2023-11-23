@@ -6,7 +6,7 @@ body {
 #cabecalho {
     background: linear-gradient(180deg, #187D22 81.77%, #2D2D2D 100%);
     width: 100%;
-    height: 212px;
+    height: 160px;
 }
 
 #cabecalho img {
@@ -16,9 +16,10 @@ body {
 }
 
 #cabecalho h1 {
+    width: 30%;
     position: relative;
-    top: -15%;
-    left: 8%;
+    top: -25%;
+    left: 7%;
 }
 
 #cabecalho a{
@@ -37,7 +38,8 @@ body {
     font-weight: 400;
     line-height: normal;
     position: relative;
-    left: 57%;
+    left: 60%;
+    top: -28%;
     margin: 0% 3% 0% 0%;
 
     width: 10%;
@@ -57,7 +59,7 @@ body {
 #conteudo {
     background: url(img/fundo.png), lightgray 50% / cover no-repeat;
     width: 100%;
-    height: 1600px;
+    height: 600px;
 }
 
 #rodape {
@@ -65,10 +67,8 @@ body {
     bottom: 0;
     background: linear-gradient(180deg, #2D2D2D 0%, #187D22 36.46%);
     width: 100%;
-    height: 167px;
+    height: 100px;
     flex-shrink: 0;
-
-
 }
 
 #rodape p {
@@ -87,6 +87,8 @@ body {
 }
 
 #rodape h3 {
+    width: 30%;
+    margin: 0% 0% 0.5% 0%;
     position: relative;
     left: 3%;
 
