@@ -29,13 +29,13 @@ app.get("/sobre", (request, response) => {
 
 app.post("/agradecimento", (request, response) => {
 
-    let nomeForm = request.body.nomeLabel
-    let idadeForm = request.body.idadeLabel
-    let emailForm = request.body.emailLabel
-    let telefoneForm = request.body.telefoneLabel
-    let CEPForm = request.body.CEPLabel
-    let enderecoForm = request.body.enderecoLabel
-    let tipoSanguineoForm = request.body.tipoSanguineoLabel
+    let nomeForm = request.body.nomeInput
+    let idadeForm = request.body.idadeInput
+    let emailForm = request.body.emailInput
+    let telefoneForm = request.body.dddInput + '-' +request.body.celularInput 
+    let CEPForm = request.body.CEPInput
+    let enderecoForm = request.body.enderecoInput
+    let tipoSanguineoForm = request.body.tipoSanguineoInput
 
 
     let cadastro = {
