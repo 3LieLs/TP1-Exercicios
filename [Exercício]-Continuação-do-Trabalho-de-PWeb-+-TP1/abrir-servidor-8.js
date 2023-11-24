@@ -32,11 +32,10 @@ app.post("/agradecimento", (request, response) => {
     let nomeForm = request.body.nomeInput
     let idadeForm = request.body.idadeInput
     let emailForm = request.body.emailInput
-    let telefoneForm = request.body.dddInput + '-' +request.body.celularInput 
+    let telefoneForm = request.body.dddInput + '-' + request.body.celularInput
     let CEPForm = request.body.CEPInput
     let enderecoForm = request.body.enderecoInput
     let tipoSanguineoForm = request.body.tipoSanguineoInput
-
 
     let cadastro = {
         'nome': nomeForm,
@@ -46,14 +45,14 @@ app.post("/agradecimento", (request, response) => {
         'CEP': CEPForm,
         'endereco': enderecoForm,
         'sangue': tipoSanguineoForm,
-
     }
 
-    //fs.writeFileSync('nome.txt', nome) //Sobreescreve o nome no arquivo
-    fs.appendFileSync('nome.json', `\n${JSON.stringify(cadastro)}`) //Adiciona um nome no arquivo
+    //fs.writeFileSync() Sobreescreve o nome no arquivo
+    //fs.appendFileSync() Adiciona um nome no arquivo
     //JSON.stringify() Transforma em string
     //JSON.parse() transforma em JSON
-
+    
+    fs.appendFileSync('nome.json', `\n${JSON.stringify(cadastro)}`) 
 
     resultado = (`${nomeForm}`)
     response.render("agradecimento", { resultado });
