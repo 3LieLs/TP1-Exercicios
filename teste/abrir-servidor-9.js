@@ -14,9 +14,10 @@ app.use(express.static('public'))
 //app.use(cors())
 
 let vetorNomes = []
-if (fs.existsSync('nomes.json')) {
-    const dados = fs.readFileSync('nomes,json', 'utf-8')
-    console.log(dados)
+
+if (fs.existsSync('cadastro.json')) {
+    const dados = fs.readFileSync('cadastro.json', 'utf-8')
+    console.log(dados);
     vetorNomes = JSON.parse(dados)
 }
 
@@ -64,9 +65,9 @@ app.post("/agradecimento", (request, response) => {
 
     vetorNomes.push(cadastro)
     
-    fs.writeFileSync('nome.json', `${JSON.stringify(vetorNomes)}`) 
+    fs.writeFileSync('cadastro.json', `\n${JSON.stringify(cadastro)}`) 
 
-    resultado = (`${nomeForm}`)
+    //resultado = (`${nomeForm}`)
     response.render("agradecimento", { vetorNomes });
 });
 
