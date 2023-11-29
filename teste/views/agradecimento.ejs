@@ -39,19 +39,25 @@
                 </li>
                 <% } %>
         </ul>-->
-        
+
         <table>
             <tr>
                 <th>Nome</th>
                 <th>Idade</th>
-                <th>Email
-                </th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>CEP</th>
+                <th>Endereço</th>
+                <th>Sangue</th>
             </tr>
             <% for (let i=0; i < vetorNomes.length; i++) { %>
                 <tr>
                     <td><%=vetorNomes[i].nome%></td>
                     <td><%=vetorNomes[i].idade%></td>
                     <td><%=vetorNomes[i].email%></td>
+                    <td><%=vetorNomes[i].telefone%></td>
+                    <td><%=vetorNomes[i].cep%></td>
+                    <td><%=vetorNomes[i].endereco%></td>
                 </tr>
                 <% } %>
         </table>

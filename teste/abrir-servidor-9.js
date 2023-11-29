@@ -15,8 +15,8 @@ app.use(express.static('public'))
 
 let vetorNomes = []
 
-if (fs.existsSync('cadastro.json')) {
-    const dados = fs.readFileSync('cadastro.json', 'utf-8')
+if (fs.existsSync('cadastroDados.json')) {
+    const dados = fs.readFileSync('cadastroDados.json', 'utf-8')
     console.log(dados);
     vetorNomes = JSON.parse(dados)
 }
@@ -65,7 +65,7 @@ app.post("/agradecimento", (request, response) => {
 
     vetorNomes.push(cadastro)
     
-    fs.writeFileSync('cadastro.json', `\n${JSON.stringify(cadastro)}`) 
+    fs.writeFileSync('cadastroDados.json', `\n${JSON.stringify(cadastro)}`) 
 
     //resultado = (`${nomeForm}`)
     response.render("agradecimento", { vetorNomes });
