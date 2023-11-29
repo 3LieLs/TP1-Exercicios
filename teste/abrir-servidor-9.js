@@ -15,7 +15,9 @@ app.use(express.static('public'))
 
 let vetorNomes = []
 if (fs.existsSync('nomes.json')) {
-    fs.readFileSync('nomes,json')
+    const dados = fs.readFileSync('nomes,json', 'utf-8')
+    console.log(dados)
+    vetorNomes = JSON.parse(dados)
 }
 
 
@@ -52,6 +54,9 @@ app.post("/agradecimento", (request, response) => {
         'sangue': tipoSanguineoForm,
     }
 
+    console.log(cadastro);
+    console.log('\n'+JSON.stringify(cadastro)+',');
+
     //fs.writeFileSync() Sobreescreve o nome no arquivo
     //fs.appendFileSync() Adiciona um nome no arquivo
     //JSON.stringify() Transforma em string
@@ -62,7 +67,7 @@ app.post("/agradecimento", (request, response) => {
     fs.writeFileSync('nome.json', `${JSON.stringify(vetorNomes)}`) 
 
     resultado = (`${nomeForm}`)
-    response.render("agradecimento", { resultado });
+    response.render("agradecimento", { vetorNomes });
 });
 
 app.get("/salvar", (request, response) => {
