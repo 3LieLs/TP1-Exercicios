@@ -41,7 +41,7 @@ body {
     color: #FFF;
     text-align: center;
     font-family: Inika;
-    font-size: 250%;
+    font-size: 200%;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -254,13 +254,13 @@ tr:hover:nth-child(1n + 2) {
         left: 50%;
         transform: translate(-50%);
         width: 30%;
-        height: 5vh;
+        height: 8vh;
         margin-bottom: 5%;
     
         color: #1F1B1B;
         text-align: center;
         font-family: Inika;
-        font-size: 150%;
+        font-size: 125%;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

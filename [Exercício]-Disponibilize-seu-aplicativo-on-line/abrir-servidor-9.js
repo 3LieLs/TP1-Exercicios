@@ -2,19 +2,17 @@
 const port = 8080;
 var cont = 0
 
-//Express
 const express = require("express");
 const app = express();
 const fs = require("fs");
-const { json } = require("stream/consumers");
 app.use(express.urlencoded({ extended: true }))
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
 
-//const cors = require('cors')
-//app.use(cors())
+const cors = require('cors')
+app.use(cors())
 
-let vetorDados = []
+var vetorDados = []
 if (fs.existsSync('cadastroDados.json')) {
     const dados = fs.readFileSync('cadastroDados.json', 'utf-8')
     console.log(dados);
@@ -75,3 +73,4 @@ app.use((request, response, next) => {
 app.listen(port, () => {
     console.log(`Servidor funcionando na porta: ${port}`);
 });
+
