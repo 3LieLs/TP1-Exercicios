@@ -179,6 +179,129 @@ body {
     height: 15vh;
 }
 
-@media screen {
-    
+@media screen and (max-width: 768px) {
+
+    #cabecalho {
+        margin-bottom: 30%;
+        width: 100%;
+        height: 25vh;
+        flex-shrink: 0;
+        border-bottom: 3px solid #000;
+        background: #187D22;
+        
+    }
+
+    #cabecalho img {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top: 10%;
+    }
+
+    #cabecalho div {
+        position: relative;
+        top: -10%;
+        left: 50%;
+        transform: translate(-50%);
+
+        width: 70%;
+        height: 10vh;
+        flex-shrink: 0;
+
+        border-radius: 0px 0px 15px 15px;
+        border-right: 3px solid #000;
+        border-bottom: 3px solid #000;
+        border-left: 3px solid #000;
+        background: #187D22;
+    }
+
+    #cabecalho div p {
+        color: #000;
+        text-align: center;
+        font-family: Inika;
+        font-size: 20pt;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    #conteudo {
+        display: block;
+        width: 100%;
+    }
+
+    .secao-1,
+    .secao-1,
+    .secao-1 {
+        box-sizing: border-box;
+        top: 10%;
+        display: block;
+    }
+
+    .secao-1 p,
+    .secao-2 p,
+    .secao-3 p {
+        margin: 20% 0% 20% 0%;
+        width: 90%;
+        height: 20vh;
+        display: block;
+        color: #000;
+        text-align: justify;
+        font-family: Inika;
+        font-size: 125%;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .secao-2 p{
+        margin-left: 5%;
+    }
+
+    .secao-1 img,
+    .secao-2 img,
+    .secao-3 img {
+        display: none;
+    }
+
+    .serdoador {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top: -50%;
+        width: 25%;
+        height: 5vh;
+
+        border-radius: 15px;
+        border: solid black 3px;
+        background-color: gray;
+
+        color: #000;
+        text-align: center;
+        font-family: Inika;
+        font-size: 100%;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .serdoador a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .serdoador:hover {
+        background-color: rgb(50, 50, 50);
+        cursor: pointer;
+    }
+
+
+    #rodape {
+        position: relative;
+        bottom: 0;
+
+        background: linear-gradient(180deg, #2D2D2D 0%, #187D22 36.46%);
+        width: 100%;
+        height: 15vh;
+    }
+
 }

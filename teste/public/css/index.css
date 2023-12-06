@@ -127,11 +127,16 @@ body {
 
     #cabecalho h1 {
         position: relative;
-        width: 50%;
+        width: 60%;
         font-size: 100%;
-        top: 10%;
+        top: -0%;
         left: 50%;
         transform: translate(-50%);
+        text-align: center;
+    }
+
+    #cabecalho span{
+        display: none;
     }
 
     #cabecalho a {
@@ -142,6 +147,7 @@ body {
     .beneficios,
     .sobre,
     .cadastre-se {
+        box-sizing: border-box;
         color: #000;
         text-align: center;
         font-family: Inika;
@@ -150,23 +156,17 @@ body {
         font-weight: 400;
         line-height: normal;
         position: relative;
-        left: 3%;
-        top: -3%;
+        left: 0%;
+        top: 5%;
         margin: 0% 0% 0% 0%;
 
-        width: 30%;
+        width: 32.5%;
         height: 5vh;
         padding: 0.1%;
         flex-shrink: 0;
+        border-radius: 0%;
         border: 3px solid #000;
         background: #828282;
-    }
-
-    .beneficios:hover,
-    .sobre:hover,
-    .cadastre-se:hover {
-        background-color: rgb(50, 50, 50);
-        cursor: pointer;
     }
 
     #conteudo {
@@ -194,7 +194,7 @@ body {
         text-align: center;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: Inika;
-        font-size: 100%;
+        font-size: 75%;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -204,12 +204,13 @@ body {
         width: 30%;
         margin: 0% 0% 0.5% 0%;
         position: relative;
+        top: 15%;
         left: 3%;
 
         color: #000;
         text-align: left;
         font-family: Inter;
-        font-size: 150%;
+        font-size: 100%;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -217,6 +218,7 @@ body {
 
     #rodape img {
         position: relative;
+        top: 20%;
         left: 5%;
         margin: 0% 1% 0% 0%;
     }
