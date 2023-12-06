@@ -1,3 +1,4 @@
+
 const port = 8020;
 var cont = 0
 
@@ -13,14 +14,12 @@ app.use(express.static('public'))
 //const cors = require('cors')
 //app.use(cors())
 
-let vetorNomes = []
-
+let vetorDados = []
 if (fs.existsSync('cadastroDados.json')) {
     const dados = fs.readFileSync('cadastroDados.json', 'utf-8')
     console.log(dados);
-    vetorNomes = JSON.parse(dados)
+    vetorDados = JSON.parse(dados)
 }
-
 
 
 app.get("/", (request, response) => {
@@ -58,17 +57,10 @@ app.post("/agradecimento", (request, response) => {
     console.log(cadastro);
     console.log('\n'+JSON.stringify(cadastro)+',');
 
-    //fs.writeFileSync() Sobreescreve o nome no arquivo
-    //fs.appendFileSync() Adiciona um nome no arquivo
-    //JSON.stringify() Transforma em string
-    //JSON.parse() transforma em JSON
-
-    vetorNomes.push(cadastro)
-    
-    fs.writeFileSync('cadastroDados.json', `\n${JSON.stringify(cadastro)}`) 
-
-    //resultado = (`${nomeForm}`)
-    response.render("agradecimento", { vetorNomes });
+    vetorDados.push (cadastro) 
+    fs.writeFileSync('cadastroDados.json', `\n${JSON.stringify(vetorDados)}`)
+     
+    response.render("agradecimento", { vetorDados });
 });
 
 app.get("/salvar", (request, response) => {

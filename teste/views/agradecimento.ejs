@@ -30,39 +30,32 @@
             continuidade
             de vida!
         </p>
+        <h1 id="colaboradores">Colaboradores:</h1>
 
-        <!--<ul>
-            Colaboradores
-            <% for (let i=0; i < vetorNomes.length; i++) { %>
-                <li>
-                    <%=vetorNomes[i].nome%>
-                </li>
-                <% } %>
-        </ul>-->
-
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Email</th>
-                <th>Telefone</th>
-                <th>CEP</th>
-                <th>Endereço</th>
-                <th>Sangue</th>
-            </tr>
-            <% for (let i=0; i < vetorNomes.length; i++) { %>
+        <div id="mainColab">
+            <table>
                 <tr>
-                    <td><%=vetorNomes[i].nome%></td>
-                    <td><%=vetorNomes[i].idade%></td>
-                    <td><%=vetorNomes[i].email%></td>
-                    <td><%=vetorNomes[i].telefone%></td>
-                    <td><%=vetorNomes[i].cep%></td>
-                    <td><%=vetorNomes[i].endereco%></td>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>CEP</th>
+                    <th>Endereço</th>
+                    <th>Sangue</th>
                 </tr>
-                <% } %>
-        </table>
-
-
+                <% for (let i=0; i < vetorDados.length; i++) { %>
+                    <tr>
+                        <td><%=vetorDados[i].nome%></td>
+                        <td><%=vetorDados[i].idade%></td>
+                        <td><%=vetorDados[i].email%></td>
+                        <td><%=vetorDados[i].telefone%></td>
+                        <td><%=vetorDados[i].CEP%></td>
+                        <td><%=vetorDados[i].endereco%></td>
+                        <td><%=vetorDados[i].sangue%></td>
+                    </tr>
+                    <% } %>
+            </table>
+        </div>
 
         <button id="voltar">
             <a href="/">Voltar</a>
@@ -72,6 +65,8 @@
     <footer id="rodape">
 
     </footer>
+
+    <script src="/teste/public/js/colab.js"></script>
 </body>
 
 </html>

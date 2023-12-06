@@ -62,6 +62,51 @@ body {
     line-height: normal;
 }
 
+#colaboradores {
+    text-align: center;
+    font-weight: bold;
+}
+
+#mainColab {
+    margin-bottom: 10%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+th {
+    background-color: #187D22;
+    font-weight: bold;
+}
+
+tr {
+    font-size: 75%;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:hover:nth-child(1n + 2) {
+    background-color: #085F63;
+    color: #fff;
+}
+
 #voltar {
     position: relative;
     left: 50%;
@@ -102,6 +147,4 @@ body {
     background: linear-gradient(180deg, #2D2D2D 0%, #187D22 36.46%);
 }
 
-@media screen {
-    
-}
+@media screen {}
