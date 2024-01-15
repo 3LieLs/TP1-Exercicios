@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de 2 turmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="element">
+        <h1>Média de duas turmas</h1>
+
+        <h2>Quantidade de alunos por turma</h2>
+        <p>Quantos alunos estão matriculados na turma 1?</p>
+        <input type="number" name="" id="quantAlu1" placeholder="1-20"> <button id="quantalu11" onclick="">Enviar</button>
+        <p>Quantos alunos estão matriculados na turma 2?</p>
+        <input type="number" name="" id="quantAlu2" placeholder="1-20"> <button id="quantalu22" onclick="">Enviar</button>
+
+        <h2>Nome e média anual dos alunos</h2>
+        <p>Informe o nome e a média anual de cada aluno da turma 1:</p>
+        <label for="nomeAlu1">Nome</label>
+        <input type="text" name="nomeAlu1" id="nomeAlu1" placeholder="Rodrigo"> <button id="nomeAlu11"
+            onclick="mediaTurma()">Enviar</button>
+        <label for="mediaAlu1">Média</label>
+        <input type="number" name="mediaAlu1" id="mediaAlu1" placeholder="0-100"> <button id="mediaAlu11"
+            onclick="mediaTurma()">Enviar</button>
+
+        <p>Informe o nome e a média anual de cada aluno da turma 2:</p>
+        <label for="nomeAlu2">Nome</label>
+        <input type="text" name="nomeAlu2" id="nomeAlu2" placeholder="Lohana"> <button id="nomeAlu22"
+            onclick="mediaTurma()">Enviar</button>
+        <label for="mediaAlu2">Média</label>
+        <input type="number" name="mediaAlu2" id="mediaAlu2" placeholder="0-100"> <button id="mediaAlu22"
+            onclick="mediaTurma()">Enviar</button>
+
+        <p id="resultado1"></p>
+        <p id="resultado2"></p>
+        <p id="resultado3"></p>
+        <p id="resultado4"></p>
+
+        <h2>Cálculo final</h2>
+        <p>Cálculo da média total da turma</p>
+        <button id="mediaTotal" onclick="mediaTurma()">Média total</button>
+        <p id="resultado5"></p>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

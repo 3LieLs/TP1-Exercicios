@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h1 style="text-align: center;">Calculadora</h1>
+    <div class="struc">
+        <div>
+            <p id="result" class="result">.</p>
+        </div> 
+        <div class="firtsb">
+            <p id="miniNum" class="miniNum">.</p>
+            <p id="numeros" class="num">0</p>
+            
+            <div>
+                <button id="ce" onclick="util()">ce</button>
+                <button id="c" onclick="util()">c</button>
+                <button id="del" onclick="util()">del</button>
+                <button id="div" onclick="calculo()">/</button>
+            </div>
+            <div>
+                <button id="7" onclick="adc()">7</button>
+                <button id="8" onclick="adc()">8</button>
+                <button id="9" onclick="adc()">9</button>
+                <button id="mult" onclick="calculo()">x</button>
+            </div>
+            <div>
+                <button id="4" onclick="adc()">4</button>
+                <button id="5" onclick="adc()">5</button>
+                <button id="6" onclick="adc()">6</button>
+                <button id="sub" onclick="calculo()">-</button>
+            </div>
+            <div>
+                <button id="1" onclick="adc()">1</button>
+                <button id="2" onclick="adc()">2</button>
+                <button id="3" onclick="adc()">3</button>
+                <button id="adi" onclick="calculo()">+</button>
+            </div>
+            <div>
+                <button id="0" style="margin-left: 25%;" onclick="adc()">0</button>
+                <button id="same" style="margin-left: 25%;" onclick="calculo()">=</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>

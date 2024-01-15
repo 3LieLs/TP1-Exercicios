@@ -1,0 +1,47 @@
+<script>
+    var r_p, sim_nao, temp
+
+    inicio()
+
+    function inicio() {
+        alert("Vamos fazer uma contagem.\n")
+        contagem()
+        alert("Contagem terminada.\n\n")
+        sim_nao = prompt("Deseja reiniciar? s/n: ")
+        reinicia(sim_nao)
+    }
+    function reinicia(sim_nao) {
+        if (sim_nao == 's' || sim_nao == 'S') {
+            inicio()
+        } else if (sim_nao == 'n' || sim_nao == 'N') {
+            alert("Fim do progama.\n")
+        } else {
+            alert("Caracter inválido.\n")
+        }
+    }
+    function contagem() {
+        r_p = prompt("Você deseja escolher Regressiva (R) ou Progressiva (P)?\n\n")
+        if (r_p == 'R' || r_p == 'r') {
+            temp = prompt("Você escolheu Regressiva.\n Quantos segundos haverá a contagem? ")
+            contagemRegre()
+        } else if (r_p == 'P' || r_p == 'p') {
+            temp = prompt("Quantos segundos haverá a contagem? ")
+            contagemProgre()
+        } else {
+            alert("Caracter inválido.\n")
+        }
+    }
+    function contagemRegre() {
+        let x = -1
+        while (x < temp) {
+            alert(temp--)
+        }
+    }
+    function contagemProgre(xy) {
+        let y = 1
+        temp++
+        while (y < temp) {
+            alert(y++)
+        }
+    }
+</script>

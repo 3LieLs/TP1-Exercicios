@@ -1,0 +1,37 @@
+<script>
+    var sim_nao
+
+    inicio()
+    reinicia()
+
+    function inicio() {
+        alert("Escreva a sua idade para descobrir se você pode votar ou não.")
+        alert("E também para descobrir se ele é obrigatório ou facultativo.")
+        var idade
+        idade = prompt("idade")
+        if (idade >= 70 || idade == 17 || idade == 16) {
+            alert("Pode votar (voto facultativo).")
+        }
+        else if (idade >= 18) {
+            alert("Pode votar (voto obrigatório).")
+        }
+        if (idade < 0) {
+            alert("Idade inválida")
+        }
+        else if (idade <= 15) {
+            alert("Não pode votar ainda")
+        }
+    }
+
+    function reinicia(sim_nao) {
+        sim_nao = prompt("Deseja reiniciar? s_n")
+        if (sim_nao == 's' || sim_nao == 'S') {
+            inicio()
+        } else if (sim_nao == 'n' || sim_nao == 'N') {
+            alert("Fim do progama.\n")
+        } else {
+            alert("Caracter inválido.\n")
+        }
+    }
+
+</script>

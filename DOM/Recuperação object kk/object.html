@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are the objects on a script just scenography?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fundo">
+
+    <div class="max-container">
+        <div class="container borda">
+            <b style="text-align: center;">Pessoa</b>
+            <input class="botao" type="button" value="Nome" onclick="nomeVal()">
+            <input class="botao" type="button" value="Idade" onclick="idadeVal()">
+            <input class="botao" type="button" value="Profissão" onclick="profissaoVal()"><br>
+            <input class="botao" type="submit" value="Enviar" onclick="revVal1()">
+        </div>
+
+        <div class="container borda" style="background-color: orangered;">
+            <b style="text-align: center;">Carro</b>
+            <input class="botao" type="button" value="Marca" onclick="marcaVal()">
+            <input class="botao" type="button" value="Modelo" onclick="modeloVal()">
+            <input class="botao" type="button" value="Ano" onclick="anoVal()"><br>
+            <input class="botao" type="submit" value="Enviar" onclick="revVal2()">
+        </div>
+
+
+        <div class="container borda" style="background-color: green;">
+            <b style="text-align: center;">Retangulo</b>
+            <input class="botao" type="button" value="Largura" onclick="larguraVal()">
+            <input class="botao" type="button" value="Altura" onclick="alturaVal()"><br>
+            <input class="botao" type="button" value="Área" onclick="areaVal()">
+        </div>
+
+
+        <div class="container borda" style="background-color: blue;">
+            <b style="text-align: center;">Conta bancaria</b>
+            <input class="botao" type="button" value="Saldo" onclick="saldoVal()">
+            <input class="botao" type="button" value="Recebido" onclick="recebidoVal()">
+            <input class="botao" type="button" value="Gasto" onclick="gastoVal()"><br>
+            <input class="botao" type="submit" value="Saldo atual" onclick="consultarSaldo()">
+        </div>
+
+
+        <div class="container borda" style="background-color: aqua;">
+            <b style="text-align: center;">Aluno</b>
+            <input class="botao" type="button" value="Nome" onclick="nomeVal2()">
+            <input class="botao" type="button" value="Idade" onclick="idadeVal2()">
+            <input class="botao" type="button" value="Notas" onclick="notasVal()"><br>
+            <input class="botao" type="submit" value="Média" onclick="mediaVal()">
+        </div>
+
+    </div>
+    <div class="max-container">
+        <div class="container borda" style="background-color: firebrick;">
+            <b style="text-align: center;">Produto</b>
+            <input class="botao" type="button" value="Nome" onclick="nomeVal3()">
+            <input class="botao" type="button" value="Preço" onclick="precoVal()">
+            <input class="botao" type="button" value="Desconto(%)" onclick="descontoVal()"><br>
+            <input class="botao" type="submit" value="Preço com desconto" onclick="calcularPrecoComDesconto()">
+        </div>
+
+
+        <div class="container borda" style="background-color: goldenrod;">
+            <b style="text-align: center;">Livro</b>
+            <input class="botao" type="button" value="Titulo" onclick="tituloVal()">
+            <input class="botao" type="button" value="Autor" onclick="autorVal()">
+            <input class="botao" type="button" value="Ano da publicação" onclick="anoPublicacaoVal()"><br>
+            <input class="botao" type="submit" value="Exibir" onclick="exibirVal()">
+        </div>
+
+
+        <div class="container borda" style="background-color: lightgreen;">
+            <b style="text-align: center;">Usuário</b>
+            <input class="botao" type="button" value="Nome usuário" onclick="usuNomeVal()">
+            <input class="botao" type="button" value="Email" onclick="emailVal()">
+            <input class="botao" type="button" value="Senha" onclick="senhaVal()"><br>
+            <input class="botao" type="submit" value="Validar senha" onclick="validarSenha()">
+        </div>
+
+
+
+        <div class="container borda">
+            <b style="text-align: center;">Cachorro</b>
+            <input class="botao" type="button" value="Nome" onclick="nomeCachorroVal()">
+            <input class="botao" type="button" value="Idade" onclick="idadeCachorroVal()"><br>
+            <input class="botao" type="submit" value="AU" onclick="latirVal()">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

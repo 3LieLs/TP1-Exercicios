@@ -1,0 +1,47 @@
+<script>
+    var par_impar
+
+    alert("Vamos jogar Par ou Ímpar.\n")
+    par_impar = prompt("Você vai escolher 'par' ou 'impar'?:\n")
+
+    if (par_impar == "par") {
+
+        alert("Você escolheu Par")
+        alert("\nVamos começar, escolhe um número de 0 a 5\n")
+        var computador
+        var ZeroACinco
+        prompt(ZeroACinco)
+        var("Eu escolhi " + sorteia + ", e você escolheu " + ZeroACinco + ", então ")
+        var Resultado
+        Resultado = ZeroACinco + computador
+
+        if (Resultado % 2 == 0)
+            alert("deu Par, você venceu")
+
+        else
+            alert("deu Ímpar, eu venci")
+    }
+
+
+    else if (par_impar == "impar") {
+        alert("Você escolheu Ímpar")
+        alert("\nVamos começar, escolhe um número de 0 a 5\n")
+        var computador
+        computador = sorteia
+        var ZeroACinco
+        prompt(ZeroACinco)
+        alert("Eu escolhi " + computador + ", e você escolheu " + ZeroACinco + ", então ")
+        var Resultado
+        Resultado = ZeroACinco + computador
+
+        if (Resultado % 2 == 0)
+            escreva("deu Par, eu venci")
+
+        else
+            alert("deu Ímpar, você venceu")
+    }
+
+    function sorteia() {
+        return Math.round(Math.random() * (5 - 0) + 0);
+    }
+</script>

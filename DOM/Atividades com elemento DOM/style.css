@@ -1,0 +1,534 @@
+* {
+    font-family: cursive, Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: linear-gradient(180deg, purple, black);
+    background-attachment: fixed;
+}
+#atividadesDOM {
+    position: absolute;
+    background-color: rgb(66, 66, 66);
+    border: solid 8px black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 90%;
+}
+#mensagemIniciar {
+    position: absolute;
+    text-align: center;
+    font-size: 250%;
+    color: black;
+    width: 90%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#botaoIniciar {
+    position: absolute;
+    font-size: 20pt;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 40%;
+}
+
+/*-----Atividade 1----------Atividade 1----------Atividade 1----------Atividade 1----------Atividade 1-----*/
+#proximaAtv1 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    right: 1%;
+}
+#atividade1Titulo {
+    position: absolute;
+    font-size: 200%;
+    color: black;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#textoParaDigitar {
+    position: absolute;
+    font-size: 150%;
+    color: black;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#texto {
+    position: absolute;
+    text-align: center;
+    font-size: 150%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 5%;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#botaoTexto {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#resultadoTexto {
+    position: absolute;
+    text-align: center;
+    font-size: 150%;
+    background-color: black;
+    border-radius: 20%;
+    padding: 2%;
+    width: 50%;
+    color: purple;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*-----Atividade 2----------Atividade 2----------Atividade 2----------Atividade 2----------Atividade 2-----*/
+#proximaAtv2 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    right: 1%;
+}
+#anteriorAtv2 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    left: 1%;
+}
+#atividade2Titulo {
+    position: absolute;
+    font-size: 200%;
+    color: black;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#atividade2Mensagem {
+    position: absolute;
+    text-align: center;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    width: 40%;
+    padding: 1%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#botaoAumentarTamanho {
+    position: absolute;
+    font-size: 200%;
+    background-color: black;
+    color: purple;
+    border: solid 1px black;
+    border-radius: 20%;
+    width: 5%;
+    bottom: 10%;
+    left: 30%;
+}
+#botaoDiminuirTamanho {
+    position: absolute;
+    font-size: 200%;
+    background-color: black;
+    color: purple;
+    border: solid 1px black;
+    border-radius: 20%;
+    width: 5%;
+    bottom: 10%;
+    right: 30%;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*-----Atividade 3----------Atividade 3----------Atividade 3----------Atividade 3----------Atividade 3-----*/
+#proximaAtv3 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    right: 1%;
+}
+#anteriorAtv3 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    left: 1%;
+}
+#atividade3Titulo {
+    position: absolute;
+    font-size: 200%;
+    color: black;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#atividade3Mensagem {
+    position: absolute;
+    font-size: 150%;
+    color: black;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#trocarImagem {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#capivara{
+    position: absolute;
+    width: 20%;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*-----Atividade 4----------Atividade 4----------Atividade 4----------Atividade 4----------Atividade 4-----*/
+#proximaAtv4 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    right: 1%;
+}
+#anteriorAtv4 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    left: 1%;
+}
+#atividade4Titulo {
+    position: absolute;
+    font-size: 200%;
+    color: black;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#atividade4Mensagem {
+    position: absolute;
+    font-size: 150%;
+    color: black;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#listaElemento {
+    position: absolute;
+    text-align: center;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 5%;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#botaoLista {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 30%;
+    right: 15%;
+}
+#lista {
+    position: absolute;
+    font-size: 100%;
+    color: black;
+    width: 70%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*-----Atividade 5----------Atividade 5----------Atividade 5----------Atividade 5----------Atividade 5-----*/
+#proximaAtv5 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    right: 1%;
+}
+#anteriorAtv5 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    left: 1%;
+}
+#atividade5Titulo {
+    position: absolute;
+    font-size: 200%;
+    color: black;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#atividade5Mensagem {
+    position: absolute;
+    font-size: 150%;
+    color: black;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#botaoAperto {
+    position: absolute;
+    font-size: 250%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*-----Atividade 6----------Atividade 6----------Atividade 6----------Atividade 6----------Atividade 6-----*/
+#proximaAtv6 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    right: 1%;
+}
+#anteriorAtv6 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    left: 1%;
+}
+#atividade6Titulo {
+    position: absolute;
+    font-size: 200%;
+    color: black;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#atividade6Mensagem {
+    position: absolute;
+    font-size: 150%;
+    color: black;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#botaoR {
+    position: absolute;
+    font-size: 150%;
+    background-color: red;
+    color: black;
+    border: solid 3px black;
+    border-radius: 20%;
+    width: 10%;
+    height: 10%;
+    top: 30%;
+    left: 30%;
+}
+#botaoG {
+    position: absolute;
+    font-size: 150%;
+    background-color: green;
+    color: black;
+    border: solid 3px black;
+    border-radius: 20%;
+    width: 10%;
+    height: 10%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#botaoB {
+    position: absolute;
+    font-size: 150%;
+    background-color: blue;
+    color: black;
+    border: solid 3px black;
+    border-radius: 20%;
+    width: 10%;
+    height: 10%;
+    top: 30%;
+    right: 30%;
+}
+#destaque {
+    position: absolute;
+    text-align: center;
+    font-size: 400%;
+    color: black;
+    width: 70%;
+    padding: 1%;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.corVermelho {
+    background-color: red;
+}
+.corVerde {
+    background-color: green;
+}
+.corAzul {
+    background-color: blue;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*-----Atividade 7----------Atividade 7----------Atividade 7----------Atividade 7----------Atividade 7-----*/
+#anteriorAtv7 {
+    position: absolute;
+    font-size: 100%;
+    background-color: black;
+    color: purple;
+    border: solid 3px black;
+    border-radius: 20%;
+    top: 1%;
+    left: 1%;
+}
+#atividade7Titulo {
+    position: absolute;
+    font-size: 200%;
+    color: black;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#formulario{
+    position: absolute;
+    background-color: rgb(66, 0, 66);
+    color: white;
+    border: solid 5px black;
+    border-radius: 3%;
+    padding: 1%;
+    width: 30%;
+    height: 75%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#nome{
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    color: purple;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#sobrenome{
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    color: purple;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#gmail{
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    color: purple;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#senha{
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    color: purple;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#resetar{
+    position: absolute;
+    background-color: black;
+    color: purple;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#enviar{
+    position: absolute;
+    background-color: black;
+    color: purple;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*---------------------------------------------------------------------------------------------------------*/

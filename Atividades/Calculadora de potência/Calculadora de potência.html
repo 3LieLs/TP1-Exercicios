@@ -1,0 +1,33 @@
+<script>
+
+
+    var num1 = 0, num2 = 0, valor = 0
+    inicio()
+
+
+    /*Funções abaixo*/
+    function inicio() {
+        alert("Vamos realizar uma operação com potência.\n")
+        num1 = prompt("Digite o primeiro número para este cálculo. (Base): ")
+        num2 = prompt("\nDigite o segundo número para este cálculo. (Expoente): ")
+        pot(num1, num2)
+        reinicio()
+    }
+    function reinicio() {
+        let SimOuNao = prompt("\nVocê deseja realizar outro cálculo? s/n: ")
+        while (SimOuNao == "s") {
+            inicio()
+            break
+        } while (SimOuNao == "n") {
+            alert("\nAté a próxima.")
+            break
+        } while (SimOuNao != "n" && SimOuNao != "s") {
+            alert("\nCaracter inválido.")
+            break
+        }
+    }
+    function pot(num1, num2) {
+        alert("Resultado = " + Math.pow(num1, num2))
+        valor = Math.pow(num1, num2)
+    }
+</script>

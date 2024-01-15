@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="atividadesDOM">
+        <div id="inicio">
+            <p id="mensagemIniciar"><strong>Pronto para iniciar?</strong></p>
+            <input id="botaoIniciar" type="button" value="Iniciar">
+        </div>
+        <!-------Atividade 1----------Atividade 1----------Atividade 1----------Atividade 1----------Atividade 1------->
+        <div id="atividade1">
+            <input id="proximaAtv1" type="button" value="Próximo">
+            <p id="atividade1Titulo"><strong>Atividade 1</strong></p>
+            <p id="textoParaDigitar">Digite algo no espaço abaixo</p>
+            <input id="texto" type="text" name="texto" placeholder="Nome Genérico" required>
+            <input id="botaoTexto" type="submit" value="Enviar">
+            <p id="resultadoTexto">Resultado</p>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <!-------Atividade 2----------Atividade 2----------Atividade 2----------Atividade 2----------Atividade 2------->
+        <div id="atividade2">
+            <input id="proximaAtv2" type="button" value="Próximo">
+            <input id="anteriorAtv2" type="button" value="Anterior">
+            <p id="atividade2Titulo"><strong>Atividade 2</strong></p>
+            <p id="atividade2Mensagem"> Aperte nos botões para alterar o meu tamanho</p>
+            <input id="botaoAumentarTamanho" type="button" value="+">
+            <input id="botaoDiminuirTamanho" type="button" value="-">
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+
+        <!-------Atividade 3----------Atividade 3----------Atividade 3----------Atividade 3----------Atividade 3------->
+        <div id="atividade3">
+            <input id="proximaAtv3" type="button" value="Próximo">
+            <input id="anteriorAtv3" type="button" value="Anterior">
+            <p id="atividade3Titulo"><strong>Atividade 3</strong></p>
+            <p id="atividade3Mensagem"> Aperte no botão para mudar a imagem</p>
+            <img id="capivara" src="" alt="">
+            <input id="trocarImagem" type="button" value="Trocar a imagem">
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+
+        <!-------Atividade 4----------Atividade 4----------Atividade 4----------Atividade 4----------Atividade 4------->
+        <div id="atividade4">
+            <input id="proximaAtv4" type="button" value="Próximo">
+            <input id="anteriorAtv4" type="button" value="Anterior">
+            <p id="atividade4Titulo"><strong>Atividade 4</strong></p>
+            <p id="atividade4Mensagem">Digite algo no espaço abaixo para a lista</p>
+            <input id="listaElemento" type="text" name="texto" placeholder="Algo para a lista" required>
+            <input id="botaoLista" type="submit" value="Enviar">
+            <ol id="lista"><strong>LISTA</strong></ol>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+
+        <!-------Atividade 5----------Atividade 5----------Atividade 5----------Atividade 5----------Atividade 5------->
+        <div id="atividade5">
+            <input id="proximaAtv5" type="button" value="Próximo">
+            <input id="anteriorAtv5" type="button" value="Anterior">
+            <p id="atividade5Titulo"><strong>Atividade 5</strong></p>
+            <p id="atividade5Mensagem">Aperte no botão para contar os cliques</p>
+            <input id="botaoAperto" type="button" value="Cliques: 0">
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+
+        <!-------Atividade 6----------Atividade 6----------Atividade 6----------Atividade 6----------Atividade 6------->
+        <div id="atividade6">
+            <input id="proximaAtv6" type="button" value="Próximo">
+            <input id="anteriorAtv6" type="button" value="Anterior">
+            <p id="atividade6Titulo"><strong>Atividade 6</strong></p>
+            <p id="atividade6Mensagem">Aperte no botão para mudar as cores RGB</p>
+            <input id="botaoR" type="button" value="R"> <input id="botaoG" type="button" value="G"> <input id="botaoB"
+                type="button" value="B">
+            <p id="destaque">Texto para mudar cor</p>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+
+        <!-------Atividade 7----------Atividade 7----------Atividade 7----------Atividade 7----------Atividade 7------->
+        <div id="atividade7">
+            <input id="anteriorAtv7" type="button" value="Anterior">
+            <p id="atividade7Titulo"><strong>Formulário</strong></p>
+            <form id="formulario" action="">
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                <input type="email" name="gmail" id="gmail" placeholder="exemplo@gmail.com" required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                <input type="reset" value="Resetar" id="resetar">
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

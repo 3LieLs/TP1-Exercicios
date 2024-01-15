@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou impar</title>
+    <link rel="stylesheet" href="par_ou_impar.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="pc">Vamos jogar Par ou Impar?</h1>
+        <input id="y" type="button" value="Sim" onclick="yes()">
+        <input id="n" type="button" value="Não" onclick="nop()">
+        <label id="pair_or_odd">Você vai querer escolher
+            <input type="button" value="Par" onclick="pair()"> ou
+            <input type="button" value="Impar" onclick="odd()">
+        </label>
+        <label id="choose_number" for="">Escolhe um número de 0 a 5
+            <input id="choose" type="text" name="choose" placeholder="Escolha">
+            <input id="submit" type="submit" value="Enviar" onclick="luck()">
+        </label>
+        <p id="resultado"></p>
+    </main>
+    <script src="par_ou_impar.js"></script>
+</body>
+
+</html>

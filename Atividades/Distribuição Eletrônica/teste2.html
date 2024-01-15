@@ -1,0 +1,41 @@
+<script>
+    //1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 4f, 5d, 6p, 7s, 5f, 6d, 7p
+    var camadas = ['1s', '2s', '2p', '3s', '3p', '4s', '3d', '4p', '5s', '4d', '5p', '6s', '4f', '5d', '6p', '7s', '5f', '6d', '7p']
+    var maxEletronsCamada = [2, 2, 6, 2, 6, 2, 10, 6, 2, 10, 6, 2, 14, 10, 6, 2, 14, 10, 6]
+
+    const doubledEletro = maxEletronsCamada.map(doubled) /*ou*/ //maxEletronsCamada.map(eletro => eletro * 2)
+    const filterEletro = maxEletronsCamada.filter(fill) /*ou*/ //maxEletronsCamada.filter((eletro, index, maxEletronscamada) => maxEletronsCamada.indexOf(eletro) == index)
+    const totalEletro = maxEletronsCamada.reduce(redu) /*ou*/ //maxEletronsCamada.reduce((prevEletro, eletro) => prevEletro + eletro)
+    const verificEletro = maxEletronsCamada.every(verific) /*ou*/ //maxEletronsCamada.every(eletro => eletro > 1)
+    const verific_1_Eletro = maxEletronsCamada.some(verific1) /*ou*/ //maxEletronsCamada.some(eletro => eletro % 2 == 0) 
+    const encontreEletro = maxEletronsCamada.find(encontra) /*ou*/ //maxEletronsCamada.find(eletro => eletro == 14)
+
+    //console.log(doubledEletro)
+    //console.log(filterEletro)
+    //console.log(totalEletro)
+    //console.log(verificEletro)
+    //console.log(verific_1_Eletro)
+    //console.log(encontreEletro)
+    
+
+    function doubled(eletro) {
+        return eletro * 2
+    }
+    function fill(eletro, index, maxEletronsCamada) {
+        return maxEletronsCamada.indexOf(eletro) == index
+    }
+    function redu(prevEletro, eletro) {
+        return prevEletro + eletro
+    }
+    function verific(eletro) {
+        return eletro > 1
+    }
+    function verific1(eletro) {
+        return eletro % 2 == 0
+    }
+    function encontra(eletro) {
+        return eletro == 14
+        //funciona no primeiro encontro
+    }
+
+</script>

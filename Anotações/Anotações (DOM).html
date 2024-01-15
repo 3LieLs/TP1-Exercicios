@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações (DOM)</title>
+    <link rel="stylesheet" href="Anotações estilo.css">
+</head>
+
+<body>
+    <h1 id="titulo">Estudos de DOM</h1>
+    <p>Aqui vai o resultado.</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id="msn">Clique em mim.</div>
+
+    <script>
+
+        /*Selecionamento por Marca(tagName)
+        document.getElementsByTagName()
+        
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] //primeiro paragrafo
+        window.document.write(`No primeiro paragrafo está escrito assim "${p1.innerText}"`)
+        //.innerText -->   texto
+        //.innerHTML --> pega o texto e a formatação
+        p1.style.color = 'blue'
+        corpo.background
+        
+
+        /*Selecionamento por ID
+        document.getElementById()*/
+        /*
+        var p1 = window.document.getElementById('titulo')
+        window.document.write(`No titulo está escrito assim "${titulo.innerHTML}"`)
+        msn.style.color = 'blue'*/
+
+        /*Selecionamento por Nome
+        document.getElementsByName()*/
+
+        /*Selecionamento por Classe
+        document.getElementsByClassName()*/
+
+        /*Selecionamento por Seletor
+        document.getElementsByTagNameNS()*/
+        var d = window.document.querySelector('div#msn')
+        d.style.background = 'green'
+
+
+    </script>
+</body>
+
+</html>

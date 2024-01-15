@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações (Variáveis)</title>
+    <link rel="stylesheet" href="Anotações estilo.css">
+</head>
+
+<body>
+    <script>
+        var cadeia = 'Cadeia', numero_i = 12003, numero_r = 1200.3
+
+        //ANOTAÇÕES//
+        //cadeia.length //Quantos carácteres a string tem
+        document.write(`A string "${cadeia}" tem ${cadeia.length} carácteres.<br><br>`)
+
+        //cadeia.toUpperCase()	//Tudo para 'MAIÚSCULAS'
+        document.write(`A string "${cadeia}" virou ${cadeia.toUpperCase()} em maiúsculo.<br><br>`)
+
+        //cadeia.toLowerCase()	//Tudo para 'minúsculas'
+        document.write(`A string "${cadeia}" virou ${cadeia.toLowerCase()} em minúsculo.<br><br>`)
+
+        //numero_r.toFixed() //Adiciona casas decimais
+        document.write(`O number "${numero_r}" com duas casas decimais fica: ${numero_r.toFixed(2)}<br><br>`)
+
+        //numero_r.replace('.', ',') //Troca um carácter por outro
+
+        //numero_r.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}) //Transforma o número em valores monetários
+        //numero_r.toLocaleString('pt-BR', {style:'currency', currency:'USD'}) //Transforma o número em valores monetários
+        //numero_r.toLocaleString('pt-BR', {style:'currency', currency:'EUR'}) //Transforma o número em valores monetários
+        document.write(`${numero_r} em valores monetarios = ${numero_r.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} / ${numero_r.toLocaleString('pt-BR', {style:'currency', currency:'USD'})} / ${numero_r.toLocaleString('pt-BR', {style:'currency', currency:'EUR'})}`)
+
+    </script>
+</body>
+
+</html>

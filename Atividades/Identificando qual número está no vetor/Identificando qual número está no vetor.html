@@ -1,0 +1,19 @@
+<script>
+
+    var num1, num2, numEsco, numSort = [10000]
+
+    inicio()
+    function inicio() {
+        alert("Digite dois números para sortear: \n")
+        prompt(num1)
+        prompt(num2)
+
+        alert("Sorteando números\n")
+        alert("terminei de salvar os valores\n")
+        numEsco = prompt("escolhe um número entre os dois que você escolheu\n")
+        for (let sort = 0; sort < 10000; sort++) {
+            numSort[sort] = Math.random(num1, num2)
+        }
+        alert("Número que está armazenado no vetor escolhido: " + numSort[numEsco])
+    }
+</script>

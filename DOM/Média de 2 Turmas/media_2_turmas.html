@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de 2 turmas</title>
+    <link rel="stylesheet" href="media_2_turmas.css">
+</head>
+
+<body>
+
+    <main id="content">
+        <p>Média de duas turmas</p>
+
+        <p>Quantidade de alunos por turma</p>
+        <p>Quantos alunos estão matriculados na turma 1?</p>
+        <input id="quant_alu_1" type="number" name="quant_alu_1" placeholder="1-5"> <button id="quantalu11"
+            onclick="amount_student_1()">Enviar</button>
+        <p>Quantos alunos estão matriculados na turma 2?</p>
+        <input id="quant_alu_2" type="number" name="quant_alu_2" placeholder="1-5"> <button id="quantalu22"
+            onclick="amount_student_2()">Enviar</button>
+
+        <p>Nome e média anual dos alunos</p>
+        <p>Informe o nome e a média anual de cada aluno da turma 1:</p>
+        <label for="nomeAlu1">Nome</label>
+        <input id="nome_alu_1" type="text" name="nome_alu_1" placeholder="Rodrigo"> <button id="nomeAlu11"
+            onclick="name_student_1()">Enviar</button>
+        <label for="mediaAlu1">Média</label>
+        <input id="media_alu_1" type="number" name="media_alu_1" placeholder="0-100"> <button id="mediaAlu11"
+            onclick="average_student_1()">Enviar</button>
+
+        <p>Informe o nome e a média anual de cada aluno da turma 2:</p>
+        <label for="nomeAlu2">Nome</label>
+        <input id="nome_alu_2" type="text" name="nome_alu_2" placeholder="Lohana"> <button id="nomeAlu22"
+            onclick="name_student_2()">Enviar</button>
+        <label for="mediaAlu2">Média</label>
+        <input id="media_alu_2" type="number" name="media_alu_2" placeholder="0-100"> <button id="mediaAlu22"
+            onclick="average_student_2()">Enviar</button>
+
+        <p>Cálculo final</p>
+        <p>Cálculo da média total da turma <button id="media_total" onclick="">Média total</button></p>
+    </main>
+    <main id="view">
+        <div id="resul_quant_alu_1"></div>
+        <div id="resul_nome_alu_1"></div>
+        <div id="resul_media_alu_1"></div>
+
+        <div id="resul_quant_alu_2"></div>
+        <div id="resul_nome_alu_2"></div>
+        <div id="resul_media_alu_2"></div>
+    </main>
+
+    <script src="media_2_turmas.js"></script>
+
+</body>
+
+</html>

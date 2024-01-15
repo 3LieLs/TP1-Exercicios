@@ -1,0 +1,26 @@
+<script>
+    var num, num2, ope
+
+    num = prompt("Digite o primeiro número para calcular: ")
+    num2 = prompt("\nDigite o segundo número para calcular: ")
+    alert("+ = Adição\n- = Subtração \n* = Multiplicação \n/ = Divisão \n\n")
+    ope = prompt("\nDigite o tipo de operação\n")
+
+    switch (ope) {
+
+        case '+': alert(num + num2)
+            break
+
+        case '-': alert(num - num2)
+            break
+
+        case '*': alert(num * num2)
+            break
+
+        case '/': (num / num2)
+            break
+
+        default: alert("\nTipo de operação inválida")
+            break
+    }
+</script>

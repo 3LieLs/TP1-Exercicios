@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição eletrônica</title>
+</head>
+<style>
+    #cor {
+        color: black;
+    }
+</style>
+<body style="background-color: gray;">
+    <h1 id="cor" style="text-align: center;">Bem vindo</h1>
+    <div>Vamos fazer uma distribuição eletrônica</div>
+    <label>Número de Massa:</label>
+    <input type="number" id="num" placeholder="Número" required>
+    <button type="button" id="env"> Enviar</button>
+    <div id="result">resultado </div>
+</body>
+</html>
+
+<script>
+    var dist
+    document.getElementById("env").onclick = function(){
+        dist = document.getElementById("num").value;
+        console.log(dist);
+        document.getElementById("result").innerHTML = test()
+        }
+        function test(){
+        for (let x = 0;x<5;x++){
+        resultado = eval(x)
+        }   
+    }
+</script>
+
+

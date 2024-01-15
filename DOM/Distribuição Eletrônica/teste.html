@@ -1,0 +1,37 @@
+<script>
+    //1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 4f, 5d, 6p, 7s, 5f, 6d, 7p
+    //var  camada=['k','l','m','n','o','p','q'], k=[2],l=[2],m=[2],n=[2],o=[2],p=[2],q=[2]
+    var camadas = ['1s', '2s', '2p', '3s', '3p', '4s', '3d', '4p', '5s', '4d', '5p', '6s', '4f', '5d', '6p', '7s', '5f', '6d', '7p']
+    var maxEletronsCamada = [2, 2, 6, 2, 6, 2, 10, 6, 2, 10, 6, 2, 14, 10, 6, 2, 14, 10, 6]
+    var atomico = 0, restAtomico = 0
+    var distribuição
+    atomico = prompt("numero atomico")
+
+    distri()
+    //sobra()
+
+    function distri() {
+        let c = 0
+        let e = 0
+        //for (let x = 0; x < 19; x++) {
+            while (atomico > maxEletronsCamada[e]) {
+                //for(let x=0;x<19;x++){
+                console.log(camadas[c], maxEletronsCamada[e], "-------", atomico, "<br>");
+                atomico = atomico - maxEletronsCamada[e]
+                e++
+                c++
+            }
+        //}
+        if(atomico != 0){
+        var antAtomico = atomico + 1
+        //console.log(atomico)
+        /*atomico = antAtomico - atomico
+        console.log(atomico)
+        restAtomico = atomico
+        console.log(restAtomico)*/
+        //if (restAtomico != 0) {
+            console.log(camadas[c],atomico, "-------", restAtomico, "<br>");
+       // }
+    }
+    }
+</script>

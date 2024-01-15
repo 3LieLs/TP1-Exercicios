@@ -1,0 +1,41 @@
+<script>
+
+    var nomesTotal = [], nome, y_n, turn = 0
+
+
+    newName()
+
+
+    function newName() {
+        nome = prompt("Digite um nome")
+        nomesTotal.push(nome)
+        turn++
+        moreName()
+    }
+
+    function showName() {
+        for (let y = 0; y < turn; y++) {
+            document.write("Nome armazenado no vetor " + y + ": " + nomesTotal[y] + "<br><br>")
+        }
+    }
+
+    function moreName() {
+        y_n = prompt("Deseja escrever um novo nome? s_n")
+        if (turn < 3) {
+            if (y_n == "s" || y_n == "S") {
+                newName()
+            }
+            else if (y_n == "n" || y_n == "N") {
+                showName()
+            }
+            else {
+                alert("Caracter inválido")
+                showName()
+            }
+        }
+        else {
+            alert("Número máximo de nomes")
+            showName()
+        }
+    }
+</script>

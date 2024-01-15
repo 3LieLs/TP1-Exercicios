@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="centro">Calculadora</h1>
+
+            <input id="num1" type="text">
+            <input id="num2" type="text"> <br>
+       
+        <button id="b1" onclick="calcular()">*</button>
+        <button id="b2" onclick="calcular()">+</button>
+        <button id="b3" onclick="calcular()">-</button>
+        <button id="b4" onclick="calcular()">/</button>
+        <button id="b5" onclick="calcular()">P</button>
+        <button id="b6" onclick="calcular()">R</button>
+        <h2 id="result"></h2>
+        <h2 id="result2"></h2>
+    </div>
+    <div>
+        <h1 class="centro">Regra de três</h1>
+        <input id="num3" type="text">
+        <input id="num4" type="text">
+        <input id="num5" type="text">
+        <br>
+        <button id="b7" onclick="xbca()">x=bca</button>
+        <h2 id="x="></h2>
+        <h2 id="result4"></h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

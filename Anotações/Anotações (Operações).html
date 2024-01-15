@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações (Operadores)</title>
+    <link rel="stylesheet" href="Anotações estilo.css">
+</head>
+<body>
+    <script>
+
+        //Anotações//
+        document.write(`Soma: ${5} + ${2} = ${5+2}<br><br>`)
+        document.write(`Subtração: ${5} - ${2} = ${5-2}<br><br>`)
+        document.write(`Multiplicação: ${5} x ${2} = ${5*2}<br><br>`)
+        document.write(`Divisão: ${5} / ${2} = ${5/2}<br><br>`)
+        document.write(`Resto da Divisão: ${5} / ${2} resto = ${5%2}<br><br>`)
+        document.write(`Potência: ${5} x ${2} pot = ${5**2}<br><br>`)
+
+        var numero = 2
+        document.write(`${numero+=2} `) // A variavel numero vai receber ela mesma mais a operação
+        document.write(`${numero+=2} `) // A variavel numero vai receber ela mesma mais a operação
+        document.write(`${numero+=2} `) // A variavel numero vai receber ela mesma mais a operação
+        document.write(`${numero+=2}<br><br>`) // A variavel numero vai receber ela mesma mais a operação
+
+        document.write(`${5 == '5'}<br>`) // Não testa o valor string da variável = igual
+        document.write(`${5 != '5'}<br>`) // Não testa o valor string da variável = igual
+        document.write(`${5 === '5'}<br>`) // A variavel tem que ser idêntica em tudo = identico
+        document.write(`${5 !== '5'}<br>`) // A variavel tem que ser idêntica em tudo = identico
+
+        var media = 6.0
+        document.write(`${media >= 6.0 ?'Aprovado':'Reprovado'}<br>`) // se for verdadeiro vai dar a mensagem do "?"
+        media = 5.5
+        document.write(`${media >= 6.0 ?'Aprovado':'Reprovado'}`) //se for falso vai dar a mensagem do ":"
+    </script>
+</body>
+</html>

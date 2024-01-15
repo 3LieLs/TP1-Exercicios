@@ -1,0 +1,31 @@
+<script>
+    var saldo, taxa, meses, val, rendimentoMes = 0
+
+    inicio()
+
+    function inicio() {
+        saldo = prompt("Informe o saldo presente na conta bancária.")
+        taxa = prompt("Informe a taxa de rendimento do investimento.")
+        meses = prompt("Informe a quantidade de meses da aplicação.")
+        verificacao(val)
+        rendimento()
+    }
+
+    function verificacao(val) {
+        if (saldo < 0 || taxa < 0 || meses < 0) {
+            alert("Você digitou um valor inválido.\n\nPor favor insira valores maiores que 0")
+            inicio()
+        }
+    }
+
+    function rendimento() {
+        let y = 1
+        for (let x = 0; x < meses; x++) {
+            rendimentoMes = saldo * (taxa / 100)
+            saldo = parseFloat(saldo) + parseFloat(rendimentoMes)
+            document.write("No " + y + "° mes  a aplicação rendeu R$ " + rendimentoMes + " e o total aplicado passou a ser R$ " + saldo + "<br><br>")
+            y++
+        }
+        document.write("O saldo final da aplicação será: R$ " + saldo)
+    }
+</script>

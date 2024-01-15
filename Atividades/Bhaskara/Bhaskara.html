@@ -1,0 +1,43 @@
+<script>
+
+    inicio()
+    var a, b, c, Del, ResulDelpsv, ResulDelngv
+
+    function inicio()
+    {
+        a = prompt("escreva o valor de A: ")
+		b = prompt("escreva o valor de B: ")
+    c = prompt("escreva o valor de C: ")
+    Delta()
+    Repeat()
+	}
+    function Delta(){
+        Del = b * b - 4 * a * c
+        alert("\nDelta = "+ Del)
+    if (Del < 0){
+        alert("A equação não terá raízes reais, pois não existe raiz quadrada de número negativo.")
+    }
+        else if(Del > 0){
+        Bhaskara()
+    }
+    else{
+        alert("Zero")
+    }
+	}
+    function Bhaskara(){
+        ResulDelpsv = -b + Math.sqrt(Del) / 2 * a
+		ResulDelngv = -b - Math.sqrt(Del)/2*a
+    alert("\n\nPositivo = "+ResulDelpsv)
+    alert("\nNegativo = "+ResulDelngv)
+	}
+    function Repeat(){
+        let SimOuNao = prompt ("\nVocê deseja realizar outro cálculo? s/n: ")
+    if (SimOuNao == "s"){
+        inicio()
+    }else if(SimOuNao == "n"){
+        alert("\nAté a próxima.")
+    }else{
+        alert("\nCaracter inválido.")
+    }
+    }
+</script>

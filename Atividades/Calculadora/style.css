@@ -1,0 +1,48 @@
+.struc {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgb(75, 29, 117) 40%, white 100%);
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 20px;
+    border-color: rgb(19, 3, 56);
+}
+body {
+    background-attachment: fixed;
+    background-color: #905eaf;
+}
+.result {
+    margin-left: 10%;
+    font-size: 28px;
+    color: #4b295f;
+}
+.miniNum{
+    color: #4b295f;
+    text-align: end;
+    padding-top: 10px;
+    margin-top: 20%;
+    margin-right: 5%;
+}
+.num{
+    color: #4b295f;
+    font-size: 30px;
+    text-align: end;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+button {
+    background-color: #4b1d75;
+    color: #ac8dbe;
+    font-size: 30px;
+    width: 24%;
+    height: 60px;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: #271d30;
+}

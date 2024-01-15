@@ -1,0 +1,90 @@
+<script>
+
+
+    var num1 = 0, num2 = 0, ope, valor = 0
+    inicio()
+
+    /*Funções abaixo*/
+    function inicio() {
+        alert("Vamos realizar uma operação.\n")
+        num1 = prompt("Digite o primeiro número para este cálculo. (Base caso escolha Potencia e Radicando caso escolha Raiz): ")
+        ope = prompt("\n + = Soma\n - = Subtração\n * = Multiplicação\n / = Divisão\n p = Potencia\n r = Radiciação\n\nEscolha um desses sinais de operação: ")
+        num2 = prompt("\nDigite o segundo número para este cálculo. (Expoente caso escolha Potencia e Indice caso escolha Raiz): ")
+        switch (ope) {
+            case '+':
+                soma(num1, num2)
+                break
+            case '-':
+                sub(num1, num2)
+                break
+            case '*':
+                mult(num1, num2)
+                break
+            case '/':
+                div(num1, num2)
+                break
+            case 'p':
+                pot(num1, num2)
+                break
+            case 'r':
+                rad(num1, num2)
+                break
+            default:
+                alert("Sinal de operação inválido")
+        }
+        positivoNegativo(valor)
+        parImpar(valor)
+        reinicio()
+    }
+    function reinicio() {
+        let SimOuNao = prompt("\nVocê deseja realizar outro cálculo? s/n: ")
+        if (SimOuNao == "s") {
+            inicio()
+        } else if (SimOuNao == "n") {
+            alert("\nAté a próxima.")
+        } else {
+            alert("\nCaracter inválido.")
+        }
+    }
+    function soma(num1, num2) {
+        alert("\nResultado: " + num1 + " + " + num2 + " = " + num1 + num2)
+        valor = num1 + num2
+    }
+    function sub(num1, num2) {
+        alert("\nResultado: " + num1 + " - " + num2 + " = " + num1 - num2)
+        valor = num1 - num2
+    }
+    function mult(num1, num2) {
+        alert("\nResultado: " + num1 + " * " + num2 + " = " + num1 * num2)
+        valor = num1 * num2
+    }
+    function div(num1, num2) {
+        alert("\nResultado: " + num1 + " / " + num2 + " = " + num1 / num2 + "\n O resto deste cálculo foi " + num1 % num2)
+        valor = num1 / num2
+    }
+    function pot(num1, num2) {
+
+        alert("Resultado = " + Math.pow(num1, num2))
+        valor = Math.pow(num1, num2)
+    }
+    function rad(num1, num2) {
+        alert("Resultado = " + Math.sqrt(num1, num2))
+    }
+    function positivoNegativo(valor) {
+        if (Math.sign(valor) == 1) {
+            alert("Resultado Positivo")
+        }
+        else if (Math.sign(valor) == -1) {
+            alert("Resultado Negativo")
+        }
+        else {
+            alert("Resultado = 0")
+        }
+    }
+    function parImpar(valor) {
+        if (valor % 2 == 0)
+            alert("O número é Par")
+        else
+            alert("O número é Impar")
+    }
+</script>
